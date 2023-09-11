@@ -24,8 +24,9 @@
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
-    "tslint": "^6.1.3",
     "eslint-config-next": "^13.2.4",
+    "tslint": "^6.1.3",
+    "prettier": "^3.0.3",
     "typescript": "^5.0.2"
   },
   "ct3aMetadata": {

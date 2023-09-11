@@ -19,7 +19,7 @@ export default function useWindowDimensions(): Dimensions | null {
   const hasWindow = typeof window !== 'undefined';
 
   const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
+    getWindowDimensions(),
   );
 
   useEffect(() => {

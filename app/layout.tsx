@@ -1,8 +1,6 @@
 import Navigation from 'components/Navigation/Navigation';
 import { ThemeProvider } from 'contexts/Theme';
 import 'styles/globals.css';
-import 'utils/Math.extensions';
-import 'utils/String.extensions';
 
 interface Props {
   children: React.ReactNode;
