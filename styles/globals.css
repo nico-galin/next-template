@@ -2,13 +2,57 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+
+  --pink: #ecb0f5;
+  --pink-dark: #d19ad9;
+  --blue: #54a0f1;
+  --blue-light: #76ace6;
+  --blue-dark: #4575ae;
+  --green: #76b081;
+  --green-dark: #618c69;
+
+  --bg-0: #f8fbff;
+  --disabled: rgba(0, 0, 0, 0.2);
+
+  --border-radius: 10px;
+  --primary: var(--blue);
+  --primary-light: var(--blue-light);
+  --primary-dark: var(--blue-dark);
+  --text-primary: #000000;
+  --text-secondary: #767676;
+  --text-tertiary: #a4a4a4;
+
+  color: var(--text-primary);
+  background-color: var(--bg-0);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
 }
 
 * {

@@ -1,7 +1,6 @@
 import Navigation from 'components/Navigation/Navigation';
 import { ThemeProvider } from 'contexts/Theme';
 import 'styles/globals.css';
-
 interface Props {
   children: React.ReactNode;
 }
@@ -12,9 +11,26 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang='en'>
       <ThemeProvider>
-        <body>
+        <body
+          style={{
+            position: 'relative',
+            height: '100vh',
+            width: '100vw',
+            display: 'flex',
+            flexDirection: 'column',
+            overflow: 'hidden',
+          }}
+        >
           <Navigation />
-          {children}
+          <div
+            style={{
+              position: 'relative',
+              height: '100%',
+              overflow: 'scroll',
+            }}
+          >
+            {children}
+          </div>
         </body>
       </ThemeProvider>
     </html>
@@ -22,6 +38,6 @@ export default function RootLayout({ children }: Props) {
 }
 
 export const metadata = {
-  title: 'Home',
+  title: 'Schedule',
   description: 'Welcome to Next.js',
 };

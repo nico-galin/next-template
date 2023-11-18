@@ -1,4 +1,4 @@
-import { toTitleCase } from 'utils/string';
+import { toTitleCase } from 'utils/stringUtils';
 import styles from './Navigation.module.scss';
 
 interface Route {

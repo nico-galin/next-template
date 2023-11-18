@@ -11,6 +11,15 @@ export function sum(...nums: number[]): number {
   return nums.reduce((total, item) => total + item, 0);
 }
 
-export function isWithin(x: number, min: number, max: number): boolean {
-  return x >= min && x <= max;
+export function isWithin(
+  x: number,
+  min: number,
+  max: number,
+  inclusive = true,
+): boolean {
+  if (inclusive) {
+    return x >= min && x <= max;
+  } else {
+    return x > min && x < max;
+  }
 }
