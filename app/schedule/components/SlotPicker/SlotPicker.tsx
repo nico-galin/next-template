@@ -6,7 +6,6 @@ import utc from 'dayjs/plugin/utc';
 import useWindowDimensions from 'hooks/useWindowDimensions';
 import type ScheduleCampaign from 'models/ScheduleCampaign';
 import { useState, type MouseEvent } from 'react';
-import 'styles/globals.css';
 import generateArray from 'utils/arrayUtils';
 import classes from 'utils/classes';
 import {

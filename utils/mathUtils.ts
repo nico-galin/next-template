@@ -11,6 +11,10 @@ export function sum(...nums: number[]): number {
   return nums.reduce((total, item) => total + item, 0);
 }
 
+export function modulo(src: number, mod: number) {
+  return ((src % mod) + mod) % mod;
+}
+
 export function isWithin(
   x: number,
   min: number,

@@ -3,10 +3,10 @@ import classes from 'utils/classes';
 import styles from './Button.module.scss';
 
 type Props = {
-  variant?: 'outlined' | 'filled';
+  variant?: 'outlined' | 'filled' | 'text';
   size?: 'small';
   color?: 'primary' | 'grey';
-} & HTMLProps<HTMLButtonElement>;
+} & Omit<HTMLProps<HTMLButtonElement>, 'size'>;
 
 export default function Button({
   variant = 'filled',
@@ -16,7 +16,7 @@ export default function Button({
   className,
   ...buttonProps
 }: Props) {
-  const variantClass = variant === 'filled' ? styles.filled : styles.outlined;
+  const variantClass = styles[variant];
   const colorClass = color === 'primary' ? styles.primary : styles.grey;
   const sizeClass = size === 'small' ? styles.small : null;
   const type = (passedType as HTMLButtonElement['type']) ?? 'button';

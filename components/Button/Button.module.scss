@@ -1,22 +1,38 @@
 .container {
-  background: none;
-  outline: none;
-  border: 1px solid;
-  border-width: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-radius: var(--border-radius);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: 600;
 
   &.small {
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: small;
   }
 
   &:hover:not(:disabled) {
     cursor: pointer;
+  }
+
+  &.text {
+    padding: 0;
+    border-radius: calc(var(--border-radius) - 2px);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04)
+    }
+  }
+
+  &.filled,
+  &.outlined {
+    border: 1px solid;
+    border-width: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
   }
 
   &.filled {

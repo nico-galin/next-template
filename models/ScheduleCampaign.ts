@@ -5,6 +5,7 @@ type ScheduleCampaign = {
   includedDays: [boolean, boolean, boolean, boolean, boolean, boolean, boolean];
   startDate: string;
   endDate: string;
+  minAttendees?: number;
 };
 
 export default ScheduleCampaign;
