@@ -16,7 +16,7 @@ export default function useWindowDimensions() {
   const hasWindow = typeof window !== 'undefined';
 
   const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions(),
+    getWindowDimensions()
   );
   const [breakpoint, setBreakpoint] = useState<Breakpoint>('xl');
 

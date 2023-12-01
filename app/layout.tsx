@@ -1,6 +1,7 @@
 import Navigation from 'components/Navigation/Navigation';
 import { ThemeProvider } from 'contexts/Theme';
 import 'styles/globals.scss';
+
 interface Props {
   children: React.ReactNode;
 }

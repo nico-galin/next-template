@@ -9,7 +9,7 @@ type ThemeOption = 'light' | 'dark';
 
 interface ThemeContext_Props {
   theme: ThemeOption;
-  colors: typeof colors.dark & typeof colors.light;
+  colors: typeof colors.dark;
   setTheme: (arg0: ThemeOption) => void;
   toggleTheme: () => void;
 }
@@ -24,7 +24,7 @@ const ThemeProvider = ({ children }: ThemeProvider_Props) => {
   const [theme, setTheme] = useState<ThemeOption>('light');
   const [localTheme, setLocalTheme] = useLocalStorage<ThemeOption>(
     'theme',
-    theme,
+    theme
   );
 
   const colors = theme == 'dark' ? allColors.dark : allColors.light;

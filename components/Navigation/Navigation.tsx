@@ -1,4 +1,3 @@
-import { toTitleCase } from 'utils/stringUtils';
 import styles from './Navigation.module.scss';
 
 interface Route {
@@ -27,7 +26,7 @@ export default function Navigation() {
   return (
     <div className={styles.container}>
       {routes.map((route, routeIdx) => (
-        <button key={routeIdx}>{toTitleCase(route.title)}</button>
+        <button key={routeIdx}>{route.title.toTitleCase()}</button>
       ))}
     </div>
   );
