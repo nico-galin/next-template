@@ -1,4 +1,4 @@
-import styles from './Navigation.module.scss';
+import styles from "./Navigation.module.scss";
 
 interface Route {
   title: string;
@@ -9,15 +9,15 @@ interface Route {
 
 const routes: Route[] = [
   {
-    title: 'home',
-    icon: '',
-    path: '/',
+    title: "home",
+    icon: "",
+    path: "/",
     showOnMobile: true,
   },
   {
-    title: 'Settings',
-    icon: '',
-    path: '/settings',
+    title: "Settings",
+    icon: "",
+    path: "/settings",
     showOnMobile: true,
   },
 ];
@@ -26,7 +26,7 @@ export default function Navigation() {
   return (
     <div className={styles.container}>
       {routes.map((route, routeIdx) => (
-        <button key={routeIdx}>{route.title.toTitleCase()}</button>
+        <button key={routeIdx}>{route.title}</button>
       ))}
     </div>
   );

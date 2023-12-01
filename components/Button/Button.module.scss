@@ -20,7 +20,7 @@
     border-radius: calc(var(--border-radius) - 2px);
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.04)
+      background-color: rgba(0, 0, 0, 0.04);
     }
   }
 
@@ -67,7 +67,7 @@
       &:hover:not(:disabled) {
         border-color: var(--primary);
         color: white;
-        background-color: var(--primary)
+        background-color: var(--primary);
       }
     }
 
